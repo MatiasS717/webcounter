@@ -7,7 +7,7 @@
 <body>
   <h2>Ohtulaskuri</h2>
   <div>nappia painettu {{ value }} kertaa</div>
-  <form action="/increment" method="POST">
+  <form action="/increase" method="POST">
     <button type="submit">
       Paina
     </button>
@@ -15,6 +15,15 @@
   <form action="/reset" method="POST">
     <button type="submit">
       Nollaa
+    </button>
+  </form>
+  <form action="/increment" method="post">
+  <p>
+    <label for="title">Aseta arvo:</label> <br />
+    <input type="text" name="title" id="title" />
+  </p>
+    <button type="submit">
+      Aseta
     </button>
   </form>
 </body>
